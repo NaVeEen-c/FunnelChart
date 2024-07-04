@@ -1,0 +1,18 @@
+<h1>All Users</h1>
+<table>
+    <thead>
+        <tr>
+            <td>S.No</td>
+            <td>Name</td>
+            <td>role</td>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users;index as i">
+            <td>{{i+1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.role}}</td>
+        </tr>
+    </tbody>
+</table>

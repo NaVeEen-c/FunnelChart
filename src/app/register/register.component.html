@@ -1,0 +1,17 @@
+<h1>register Here</h1>
+<div style="margin:20px ;">
+    <form (ngSubmit)="handleSubmit()" [formGroup]="registerForm">
+        <input name="name" type="text" formControlName="name" placeholder="name" autocomplete="off"><br>
+       
+        <span>Role</span>
+          <label>
+            <input type="radio" formControlName="role" value="student"> Student
+          </label>
+          <label>
+            <input type="radio" formControlName="role" value="teacher"> Teacher
+          </label><br>
+          <button>Submit</button>
+      </form>
+     
+    </div>
+    

@@ -1,0 +1,6 @@
+<h1>All Students</h1>
+<ul>
+    <li *ngFor="let studnt of students$ |async">
+        <p>{{studnt.name}}</p>
+    </li>
+</ul>

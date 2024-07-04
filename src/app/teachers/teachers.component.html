@@ -1,0 +1,7 @@
+<h1>All Teachers</h1>
+<ul>
+    <li *ngFor="let teacher of teachers$ |async">
+       <p> {{teacher.name}}</p>
+
+    </li>
+</ul>
