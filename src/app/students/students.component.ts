@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { user } from '../user.model';
+
 import { Store } from '@ngrx/store';
 import { selectAllStudents } from '../students.store/student.selector';
 import { AsyncPipe, NgFor } from '@angular/common';
-import { loadStudents } from '../students.store/student.action';
+
 
 @Component({
   selector: 'app-students',

@@ -6,7 +6,7 @@ import { TeachersComponent } from './teachers/teachers.component';
 import { UsersComponent } from './users/users.component';
 import { GridsterModule ,GridType,GridsterConfig,GridsterItem, DisplayGrid} from 'angular-gridster2';
 import { CommonModule, NgFor } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
+
 interface PannelItem extends GridsterItem{
   component:Type<any>
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable, merge ,map, mergeMap, mergeAll} from 'rxjs';
+import { merge ,mergeAll} from 'rxjs';
 import { selectAllStudents } from '../students.store/student.selector';
 import { selectAllTeachers } from '../teachers.store/teacher.selector';
 import { AsyncPipe, NgFor } from '@angular/common';

@@ -2,7 +2,7 @@ import { AsyncPipe, NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { selectAllTeachers } from '../teachers.store/teacher.selector';
-import { loadTeachers } from '../teachers.store/teacher.action';
+
 
 @Component({
   selector: 'app-teachers',

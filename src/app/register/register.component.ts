@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { addStudent } from '../students.store/student.action';
 import { user } from '../user.model'
 import {v4 as uuid4} from 'uuid'
 import { addTeacher } from '../teachers.store/teacher.action';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-register',
