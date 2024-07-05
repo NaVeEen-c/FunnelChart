@@ -1,18 +1,21 @@
-<h1>All Users</h1>
+<div><h1>All Users</h1>
 <table>
     <thead>
         <tr>
             <td>S.No</td>
             <td>Name</td>
             <td>role</td>
+            <td>plays</td>
            
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let user of users;index as i">
+        <tr *ngFor="let user of users |async;index as i">
             <td>{{i+1}}</td>
             <td>{{user.name}}</td>
             <td>{{user.role}}</td>
+            <td>{{user.plays}}</td>
         </tr>
     </tbody>
 </table>
+</div>

@@ -19,7 +19,8 @@ export class RegisterComponent {
   registerForm=new FormGroup(
     {
       name:new FormControl(' ',Validators.required),
-      role:new FormControl('')
+      role:new FormControl('',Validators.required),
+      plays:new FormControl('',Validators.required),
     }
   )
   constructor(private store:Store,){
@@ -29,8 +30,10 @@ export class RegisterComponent {
    
     const User:user={
       id:uuid4(),
+    
       name:this.registerForm.value.name||'',
-      role:this.registerForm.value.role||''
+      role:this.registerForm.value.role||'',
+      plays:this.registerForm.value.plays||''
 
       
     }
@@ -47,7 +50,8 @@ export class RegisterComponent {
     }
     this.registerForm.patchValue({
       name:'',
-      role:''
+      role:'',
+      plays:''
     })
    
   }

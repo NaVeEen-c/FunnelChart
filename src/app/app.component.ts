@@ -6,6 +6,7 @@ import { TeachersComponent } from './teachers/teachers.component';
 import { UsersComponent } from './users/users.component';
 import { GridsterModule ,GridType,GridsterConfig,GridsterItem, DisplayGrid} from 'angular-gridster2';
 import { CommonModule, NgFor } from '@angular/common';
+import { FunnelChartComponent } from './funnel-chart/funnel-chart.component';
 
 interface PannelItem extends GridsterItem{
   component:Type<any>
@@ -31,10 +32,10 @@ export class AppComponent implements OnInit{
         ignoreContentClass: 'no-drag',
       },
       resizable:{
-        enabled:true,
+        enabled:false,
         
       },
-      margin:2,
+      margin:10,
       outerMargin:true,
       minCols:1,
       maxCols:6,
@@ -54,8 +55,12 @@ export class AppComponent implements OnInit{
 
       },
       {
-        cols:3,rows:1,y:1,x:0,component:UsersComponent
+        cols:2,rows:2,y:1,x:0,component:UsersComponent
+      },
+      {
+        cols:1,rows:2,y:1,x:2,component:FunnelChartComponent
       }
+
+      
     ]
-  }
-}
+}}

@@ -1,8 +1,8 @@
 
 <div style="height: 100vh;">
   <h1>Welcome</h1>
-<gridster [options]="options">
-  <gridster-item *ngFor='let panel of Pannels' [item]="panel">
+<gridster [options]="options" >
+  <gridster-item *ngFor='let panel of Pannels' [item]="panel" style="overflow-y: auto;">
     <ng-container *ngComponentOutlet="panel.component"></ng-container> 
 
   </gridster-item>

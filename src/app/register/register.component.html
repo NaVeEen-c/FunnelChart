@@ -10,7 +10,18 @@
           <label>
             <input type="radio" formControlName="role" value="teacher"> Teacher
           </label><br>
-          <button>Submit</button>
+          <span>Interested Game</span>
+          <label>
+            <input type="radio" formControlName="plays" value="football">Football
+          </label>
+          <label>
+            <input type="radio" formControlName="plays" value="cricket">Cricket
+          </label>
+          <label>
+            <input type="radio" formControlName="plays" value="both">Both
+          </label>
+          <br>
+          <button [disabled]="!registerForm.valid">Submit</button>
       </form>
      
     </div>
